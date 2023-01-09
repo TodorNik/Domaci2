@@ -1,5 +1,8 @@
-<head>
 
+ <!DOCTYPE html>
+ <html lang="en">
+<head>
+  <title>Sandwich Restaurant</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="stylehw2.css">
@@ -8,104 +11,123 @@
 
 <body>
 
-<nav class="topnav">
-  <a href="index.html">HOME</a>
-  <a href="foodmenu.html">MENU</a>
-  <a href="aboutus.html">OUR STORY</a>
-  <a href="">CONTACT US</a>
-</nav>
+  <nav class="topnav" id="navigationbar">
+    <a href="index.html" id="homenavigation">HOME</a>
+    <a href="foodmenu.html" id="menunavigation">MENU</a>
+    <a href="aboutus.html" id="ourstorynavigation">OUR STORY</a>
+    <a href="contactinfo.html" id="contactinfonavigation">CONTACT US</a>
+  </nav>
 
-<div class="wrapper"> 
-<div class="elemblack">
-    <img class="logo" src="94f38708ca53874f3371bffc059d6eb9.jpg">
-    <p class="titles">Italian Food</p>
-    <button type="button">READ MORE!</button> </div>
-</div>
 
-<div class="elem">
-<p class="titles">Lorem Ipsum Dolor</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<div class="wrapper" id="gridwrapper"> 
+<div class="elemblack" id="blackbackgroundelement1">
+    <img class="logo" src="94f38708ca53874f3371bffc059d6eb9.jpg" alt="restaurant logo">
+    
+    <p class="titles" id="pagename">Sandwich Food</p>
+    <button type="button" class="readmore" id="buttomformore" onclick="myFunction()">READ MORE!</button> </div>
+    <script>
+      function myFunction() {
+        location.replace("foodmenu.html")
+      }
+      </script>
+  </div>
+
+<div class="elem" id="gridelement">
+<p class="titles" id="sectiontitle">Lorem Ipsum Dolor</p>
+<p id="pagetext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.
   Nunc aliquam augue nec malesuada sodales. Sed placerat diam placerat lorem tempus, ut venenatis neque ornare.</p>
-<img src="linesand.png" alttext="picture of available food" class="food1">
-<img src="wrapsand.jpeg" alttext="picture of available food" class="food2">
-<img src="sandwichtom.jpeg" alttext="picture of available food" class="food3">
+<img src="linesand.png" alt="picture of available food" class="food1" id="foodpicture1">
+<img src="wrapsand.jpeg" alt="picture of available food" class="food2" id="foodpicture2">
+<img src="sandwichtom.jpeg" alt="picture of available food" class="food3" id="foodpicture3">
 <br>
 <br>
 <br>
 
-<a href="foodmenu.html"class="showmore">SHOW MORE</a>
+<a href="foodmenu.html" class="showmore">SHOW MORE</a>
 </div>
 
-<div class="elemblack">
+<div class="elemblack" id="blackbackgroundelement2">
 <p class="titles">Lorem Ipsum Dolor</p>
   
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+  <p id="pagetext2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.
   Nunc aliquam augue nec malesuada sodales. Sed placerat diam placerat lorem tempus, ut venenatis neque ornare.</p> 
   
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+  <p id="pagetext3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.
   Nunc aliquam augue nec malesuada sodales. Sed placerat diam placerat lorem tempus, ut venenatis neque ornare.</p>
 </div>
 
 <div class="elem">
 
-<img src="sandwichcube.jpg" alttext="" class="examplefood">
+<img src="sandwichcube.jpg" alt="sandwich cut into cubes" class="examplefood">
 <p class="promo">50% All Excursions</p>
 <p class="promo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.
   Nunc aliquam augue nec malesuada sodales. Sed placerat diam placerat lorem tempus, ut venenatis neque ornare.</p>
-<button class="promo" type="button">READ MORE!</button>
+<button class="promo" type="button" onclick="myFunction2()">READ MORE!</button>
+<script>
+  function myFunction2() {
+    location.replace("contactinfo.html")
+  }
+  </script>
 <br>
 <br>
-<img src="trianglesand.jpeg" alttext="" class="janpromo">
-<p class="promo">January's Promo:</p>
-<p class="promo">Buy 1 Get 1 Free</p>
-<p class="promo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<img src="trianglesand.jpeg" alt="sandwich cut into triangles" class="janpromo">
+<p class="promo" id="promo1">January's Promo:</p>
+<p class="promo" id="promo2">Buy 1 Get 1 Free</p>
+<p class="promo" id="promo3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.
   Nunc aliquam augue nec malesuada sodales. Sed placerat diam placerat lorem tempus, ut venenatis neque ornare.</p>
-<button class="promo" type="button">READ MORE!</button> </div>
+<button class="promo" type="button" id="readmorepromo" onclick="myFunction2()">READ MORE!</button> 
+<script>
+  function myFunction2() {
+    location.replace("contactinfo.html")
+  }
+  </script>
 </div>
 
-<div class="elemblack">
+
+<div class="elemblack" id="blackbackgroundelement3">
 <p class="titles">Lorem Ipsum Dolor</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<p id="pagetext4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu.</p>
-<img src="croissantsandwich.jpg" alttext="" class="bigfood">
+<img src="croissantsandwich.jpg" alt="sandwich in a croissant" class="bigfood" id="foodimage">
 </div>
 
 <div>
-<div class="threecolumn">
-<label class="subtitle">Lorem Ipsum Dolor</label>
-<p class="textthree">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<div class="threecolumn" id="threecolumnsection">
+<label class="subtitle" id="titlecolumn1">Lorem Ipsum Dolor</label>
+<p class="textthree" id="column1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu.</p>
 
-<label class="subtitle">Lorem Ipsum Dolor</label>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<label class="subtitle" id="titlecolumn2">Lorem Ipsum Dolor</label>
+<p class="textthree" id="column2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu.</p>
 
-<label class="subtitle">Lorem Ipsum Dolor</label>
-<p class="textthree">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<label class="subtitle" id="titlecolumn3">Lorem Ipsum Dolor</label>
+<p class="textthree" id="column3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu.</p>
 
-<p class="textthree"  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
+<p class="textthree" id="textbelow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.
   Nunc aliquam augue nec malesuada sodales. Sed placerat diam placerat lorem tempus, ut venenatis neque ornare</p>
 </div>
 <p class="extra">Lorem Ipsum</p>
 </div>
 
-<div class="elemblack">
-<p class="titles">Title Here</p>
+<div class="elemblack" id="blackbackgroundelement4">
+<p class="titles" id="titlecolumn">Title Here</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed augue sem.
   Maecenas fringilla ante massa, eu viverra ipsum consequat eu. Fusce vel felis euismod, placerat metus id, pellentesque lectus.</p>
   <br>
   <br>
   <br>
-  <input type="txt">
-<button type="button">SUBSCRIBE!</button> </div>
+  <input type="text">
+<button type="button">SUBSCRIBE!</button> 
 </div>
-</div>
+
+
 </body>
 
